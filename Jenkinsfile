@@ -6,7 +6,10 @@ pipeline {
         stage('Ejecutar comandos de Bash') {
             steps {
                 sh '''
-                      ls -ltrha               '''
+                    ls -ltrha
+                    echo $SampleVar
+                    
+                                     '''
             }
         }
     }
